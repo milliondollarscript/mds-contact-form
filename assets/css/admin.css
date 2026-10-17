@@ -1,0 +1,254 @@
+.mds-contact-fields-callout {
+    align-items: center;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    color: #111827;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    margin: 16px 0;
+    padding: 16px;
+}
+
+.mds-contact-fields-callout strong {
+    color: #111827;
+    display: block;
+    font-size: 15px;
+    margin: 0 0 4px;
+}
+
+.mds-contact-fields-callout p {
+    color: #334155;
+    margin: 0;
+    max-width: 720px;
+}
+
+.mds-contact-fields-callout .button,
+.mds-contact-submission-actions .button {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    min-height: 34px;
+}
+
+.mds-contact-submissions-table {
+    overflow-x: auto;
+}
+
+.mds-contact-submissions-table table {
+    min-width: 960px;
+}
+
+.mds-contact-submission-message {
+    color: var(--mds3-admin-text, #1d2327);
+    max-width: 420px;
+    white-space: pre-wrap;
+}
+
+.mds-contact-submission-actions {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.mds-contact-submission-actions form {
+    margin: 0;
+}
+
+.mds-contact-status {
+    border-radius: 999px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    padding: 3px 8px;
+}
+
+.mds-contact-status-unread,
+.mds-contact-status-pending {
+    background: #fff7ed;
+    color: #9a3412;
+}
+
+.mds-contact-status-read,
+.mds-contact-status-sent {
+    background: #ecfdf5;
+    color: #065f46;
+}
+
+.mds-contact-status-failed,
+.mds-contact-status-erased {
+    background: #fef2f2;
+    color: #991b1b;
+}
+
+body.mds3-admin-theme-dark .mds-contact-fields-callout {
+    background: #172554;
+    border-color: #3b82f6;
+    color: #eff6ff;
+}
+
+body.mds3-admin-theme-dark .mds-contact-fields-callout strong,
+body.mds3-admin-theme-dark .mds-contact-fields-callout p {
+    color: #eff6ff;
+}
+
+body.mds3-admin-theme-dark .mds-contact-status-unread,
+body.mds3-admin-theme-dark .mds-contact-status-pending {
+    background: #431407;
+    color: #ffedd5;
+}
+
+body.mds3-admin-theme-dark .mds-contact-status-read,
+body.mds3-admin-theme-dark .mds-contact-status-sent {
+    background: #052e26;
+    color: #d1fae5;
+}
+
+body.mds3-admin-theme-dark .mds-contact-status-failed,
+body.mds3-admin-theme-dark .mds-contact-status-erased {
+    background: #450a0a;
+    color: #fee2e2;
+}
+
+@media (prefers-color-scheme: dark) {
+    body.mds3-admin-theme-system .mds-contact-fields-callout {
+        background: #172554;
+        border-color: #3b82f6;
+        color: #eff6ff;
+    }
+
+    body.mds3-admin-theme-system .mds-contact-fields-callout strong,
+    body.mds3-admin-theme-system .mds-contact-fields-callout p {
+        color: #eff6ff;
+    }
+
+    body.mds3-admin-theme-system .mds-contact-status-unread,
+    body.mds3-admin-theme-system .mds-contact-status-pending {
+        background: #431407;
+        color: #ffedd5;
+    }
+
+    body.mds3-admin-theme-system .mds-contact-status-read,
+    body.mds3-admin-theme-system .mds-contact-status-sent {
+        background: #052e26;
+        color: #d1fae5;
+    }
+
+    body.mds3-admin-theme-system .mds-contact-status-failed,
+    body.mds3-admin-theme-system .mds-contact-status-erased {
+        background: #450a0a;
+        color: #fee2e2;
+    }
+}
+
+/* Forced MDS theme (same palette as the system block above). */
+
+    body.mds3-admin-theme-dark .mds-contact-fields-callout {
+        background: #172554;
+        border-color: #3b82f6;
+        color: #eff6ff;
+    }
+
+    body.mds3-admin-theme-dark .mds-contact-fields-callout strong,
+    body.mds3-admin-theme-dark .mds-contact-fields-callout p {
+        color: #eff6ff;
+    }
+
+    body.mds3-admin-theme-dark .mds-contact-status-unread,
+    body.mds3-admin-theme-dark .mds-contact-status-pending {
+        background: #431407;
+        color: #ffedd5;
+    }
+
+    body.mds3-admin-theme-dark .mds-contact-status-read,
+    body.mds3-admin-theme-dark .mds-contact-status-sent {
+        background: #052e26;
+        color: #d1fae5;
+    }
+
+    body.mds3-admin-theme-dark .mds-contact-status-failed,
+    body.mds3-admin-theme-dark .mds-contact-status-erased {
+        background: #450a0a;
+        color: #fee2e2;
+    }
+
+
+@media (max-width: 782px) {
+    .mds-contact-fields-callout {
+        grid-template-columns: 1fr;
+    }
+
+    .mds-contact-fields-callout .button {
+        width: 100%;
+    }
+
+    .mds-contact-submissions-table {
+        overflow: visible;
+    }
+
+    .mds-contact-submissions-table table,
+    .mds-contact-submissions-table tbody,
+    .mds-contact-submissions-table tr,
+    .mds-contact-submissions-table td {
+        display: block;
+        min-width: 0;
+        width: 100%;
+    }
+
+    .mds-contact-submissions-table thead {
+        clip: rect(1px, 1px, 1px, 1px);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        width: 1px;
+    }
+
+    .mds-contact-submissions-table tbody tr {
+        border: 1px solid var(--mds3-admin-border, #c3c4c7);
+        border-radius: 6px;
+        margin-bottom: 16px;
+        overflow: hidden;
+    }
+
+    .mds-contact-submissions-table tbody td {
+        align-items: start;
+        border: 0;
+        border-bottom: 1px solid var(--mds3-admin-border, #dcdcde);
+        display: grid;
+        gap: 12px;
+        grid-template-columns: minmax(92px, 0.38fr) minmax(0, 1fr);
+        overflow-wrap: anywhere;
+        padding: 12px;
+    }
+
+    .mds-contact-submissions-table tbody td:last-child {
+        border-bottom: 0;
+    }
+
+    .mds-contact-submissions-table tbody td::before {
+        content: attr(data-label) !important;
+        display: block !important;
+        float: none !important;
+        font-weight: 600;
+        grid-column: 1;
+        grid-row: 1;
+        overflow: visible !important;
+        position: static !important;
+        text-overflow: clip !important;
+        white-space: normal !important;
+        width: auto !important;
+    }
+
+    .mds-contact-submissions-table tbody td > * {
+        grid-column: 2;
+    }
+
+    .mds-contact-submission-message {
+        margin-bottom: 0;
+        max-width: none;
+    }
+}

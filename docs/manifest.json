@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "package": "mds-contact-form",
+  "type": "extension",
+  "version": "1.0.5",
+  "channel": "main",
+  "title": "Contact Form",
+  "docs": [
+    {
+      "id": "usage",
+      "title": "Usage",
+      "file": "USAGE.md",
+      "audience": ["admin", "support", "developer"],
+      "topics": ["settings", "privacy", "field-help", "developer", "extensions"]
+    }
+  ]
+}
