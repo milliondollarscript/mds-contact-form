@@ -9,7 +9,7 @@
  * License: GPL v2 or later
  * Text Domain: mds-contact-form
  * Requires at least: 6.0
- * Tested up to: 7.0.3
+ * Tested up to: 7.1
  * Requires PHP: 8.1
  * Requires Plugins: million-dollar-script
  * Requires MDS: 3.0.0
