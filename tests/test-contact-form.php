@@ -36,13 +36,22 @@ class MDS_Contact_Form_Tests extends WP_UnitTestCase {
     }
 
     public function test_extension_initialization_and_hooks() {
-        $this->assertSame('1.0.4', MDS_CONTACT_FORM_VERSION);
+        // One version for the package: compare the constant to the plugin header instead
+        // of a literal, so the test still means something after a bump. The schema
+        // version below is deliberately separate - it moves only when the table moves.
+        $this->assertSame($this->plugin_header_version(dirname(__DIR__) . '/mds-contact-form.php'), MDS_CONTACT_FORM_VERSION, 'plugin header and version constant disagree');
         $this->assertSame('1.0.3', MDS_CONTACT_FORM_DB_VERSION);
         $this->assertNotFalse(has_action('init', [$this->extension, 'init']));
         $this->assertNotFalse(has_action('wp_ajax_mds_contact_form_submit', [$this->extension, 'handle_form_submission']));
         $this->assertNotFalse(has_action('wp_ajax_nopriv_mds_contact_form_submit', [$this->extension, 'handle_form_submission']));
         $this->assertNotFalse(has_action('mds_contact_form_cleanup', [$this->extension, 'cleanup_expired_submissions']));
         $this->assertTrue(shortcode_exists('mds_contact_form'));
+    }
+
+    /** The Version: line of a plugin file header, or false when it cannot be read. */
+    private function plugin_header_version(string $file) {
+        $src = (string) file_get_contents($file);
+        return preg_match('/^[ \t]*\*[ \t]*Version:[ \t]*(\S+)/m', $src, $m) ? $m[1] : false;
     }
 
     public function test_database_table_contains_current_workflow_columns() {
