@@ -3,7 +3,7 @@
  * Plugin Name: Million Dollar Script - Contact Form
  * Plugin URI: https://milliondollarscript.com/extensions/contact-form
  * Description: Simple contact form builder with email notifications and basic spam protection for Million Dollar Script.
- * Version: 1.0.6
+ * Version: 1.0.7
  * Author: Million Dollar Script
  * Author URI: https://milliondollarscript.com
  * License: GPL v2 or later
@@ -28,7 +28,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define constants
-define('MDS_CONTACT_FORM_VERSION', '1.0.6');
+define('MDS_CONTACT_FORM_VERSION', '1.0.7');
 define('MDS_CONTACT_FORM_DB_VERSION', '1.0.3');
 define('MDS_CONTACT_FORM_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('MDS_CONTACT_FORM_PLUGIN_URL', plugin_dir_url(__FILE__));
