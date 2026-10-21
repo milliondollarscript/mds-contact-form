@@ -2,7 +2,7 @@
   "schema": 1,
   "package": "mds-contact-form",
   "type": "extension",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "channel": "main",
   "title": "Contact Form",
   "docs": [

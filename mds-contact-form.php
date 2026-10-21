@@ -28,7 +28,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define constants
-define('MDS_CONTACT_FORM_VERSION', '1.0.5');
+define('MDS_CONTACT_FORM_VERSION', '1.0.6');
 define('MDS_CONTACT_FORM_DB_VERSION', '1.0.3');
 define('MDS_CONTACT_FORM_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('MDS_CONTACT_FORM_PLUGIN_URL', plugin_dir_url(__FILE__));
