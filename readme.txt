@@ -2,7 +2,7 @@
 Contributors: milliondollarscript
 Tags: contact form, sponsor wall, spam protection, privacy, custom fields
 Requires at least: 6.0
-Tested up to: 7.1
+Tested up to: 7.1.3
 Requires PHP: 8.1
 Stable tag: 1.0.5
 License: GPLv2 or later
